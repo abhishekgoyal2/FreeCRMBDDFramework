@@ -1,0 +1,91 @@
+[
+  {
+    "id": "freecrm-login",
+    "description": "",
+    "name": "freeCRM Login",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "freecrm-login;free-crm-login-test-scenario",
+        "description": "",
+        "name": "free CRM login Test Scenario",
+        "keyword": "Scenario",
+        "line": 2,
+        "steps": [
+          {
+            "result": {
+              "duration": 18275066919,
+              "status": "passed"
+            },
+            "name": "User is already on Login Page",
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "LoginStepDefinition.User_is_already_on_Login_Page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1599229248,
+              "status": "passed"
+            },
+            "name": "title of login page is Free CRM",
+            "keyword": "When ",
+            "line": 5,
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page_is_Free_CRM()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3774576738,
+              "status": "passed"
+            },
+            "name": "User enter username and password",
+            "keyword": "Then ",
+            "line": 6,
+            "match": {
+              "location": "LoginStepDefinition.User_enter_username_and_password()"
+            }
+          },
+          {
+            "result": {
+              "duration": 203988430,
+              "status": "passed"
+            },
+            "name": "User clicks on login button",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "LoginStepDefinition.User_clicks_on_login_button()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1344818581,
+              "status": "passed"
+            },
+            "name": "User is on the home page",
+            "keyword": "And ",
+            "line": 8,
+            "match": {
+              "location": "LoginStepDefinition.User_is_on_the_home_page()"
+            }
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "close the browser",
+            "keyword": "Then ",
+            "line": 9,
+            "match": {}
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "login.feature"
+  }
+]

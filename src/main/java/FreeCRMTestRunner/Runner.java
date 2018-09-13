@@ -9,7 +9,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "C:\\Users\\abhishek.goyal2\\workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features"
 		,glue={"stepDefinition"},
-		format= {"pretty","html:test-output"}
+		format= {"pretty","html:test-output","json:test-output/cucumber.json","junit:junitxml/cucumber.xml"},
+		monochrome=true,
+		dryRun=false,
+		strict=true
 		)
 public class Runner {
 
