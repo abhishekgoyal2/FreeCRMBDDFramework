@@ -1,12 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.19768">
-<testcase classname="freeCRM Login" name="free CRM login Test Scenario" time="25.19768">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User is already on Login Page.........................................passed
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="65.653946">
+<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="23.323496">
+<failure message="org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter a first name&#10;): Please enter a first name&#10;&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'DEL1-DHP-27956', ip: '172.16.38.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'&#10;Session ID: 6ae6c1ab-056b-44b6-91eb-2c65d74048aa&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:526)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)&#13;&#10;&#9;at stepDefinition.LoginStepDefinition.close_the_browser(LoginStepDefinition.java:94)&#13;&#10;&#9;at ✽.Then close the browser(contact.feature:12)&#13;&#10;"><![CDATA[Given User is already on Login Page.........................................passed
 When title of login page is Free CRM........................................passed
-Then User enter username and password.......................................passed
+Then User enter "naveenk" and "test@123"....................................passed
+Then User clicks on login button............................................passed
+Then User is on the home page...............................................passed
+Then User moves to contact page.............................................passed
+Then User enters contact "" and "Tom"  and "Peter"..........................passed
+Then close the browser......................................................failed
+
+StackTrace:
+org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter a first name
+): Please enter a first name
+
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DEL1-DHP-27956', ip: '172.16.38.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: 6ae6c1ab-056b-44b6-91eb-2c65d74048aa
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at stepDefinition.LoginStepDefinition.close_the_browser(LoginStepDefinition.java:94)
+	at ✽.Then close the browser(contact.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="21.463303">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM software in the cloud for sales and service]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinition.LoginStepDefinition.User_is_on_the_home_page(LoginStepDefinition.java:65)&#13;&#10;&#9;at ✽.Then User is on the home page(contact.feature:9)&#13;&#10;"><![CDATA[Given User is already on Login Page.........................................passed
+When title of login page is Free CRM........................................passed
+Then User enter "naveenk" and "test@123"....................................passed
+Then User clicks on login button............................................passed
+Then User is on the home page...............................................failed
+Then User moves to contact page.............................................skipped
+Then User enters contact "" and "John"  and "Carry".........................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[CRMPRO]> but was:<[#1 Free CRM software in the cloud for sales and service]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinition.LoginStepDefinition.User_is_on_the_home_page(LoginStepDefinition.java:65)
+	at ✽.Then User is on the home page(contact.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="freeCRM Login" name="free CRM login Test Scenario" time="20.867147">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
+When title of login page is Free CRM........................................passed
+Then User enter "naveenk" and "test@123"....................................passed
 Then User clicks on login button............................................passed
 And User is on the home page................................................passed
-Then close the browser......................................................undefined
-]]></failure>
+Then close the browser......................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

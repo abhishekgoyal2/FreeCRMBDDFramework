@@ -1,5 +1,292 @@
 [
   {
+    "id": "free-crm-contact",
+    "description": "",
+    "name": "Free CRM Contact",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "free-crm-contact;free-crm-create-a-new-contact-scenario;;2",
+        "description": "",
+        "name": "Free CRM Create a New Contact scenario",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "steps": [
+          {
+            "result": {
+              "duration": 15159379525,
+              "status": "passed"
+            },
+            "name": "User is already on Login Page",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "LoginStepDefinition.User_is_already_on_Login_Page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1342132076,
+              "status": "passed"
+            },
+            "name": "title of login page is Free CRM",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page_is_Free_CRM()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1663590962,
+              "status": "passed"
+            },
+            "name": "User enter \"naveenk\" and \"test@123\"",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "val": "naveenk",
+                  "offset": 12
+                },
+                {
+                  "val": "test@123",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginStepDefinition.User_enter_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ]
+          },
+          {
+            "result": {
+              "duration": 3513187045,
+              "status": "passed"
+            },
+            "name": "User clicks on login button",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "LoginStepDefinition.User_clicks_on_login_button()"
+            }
+          },
+          {
+            "result": {
+              "duration": 12703282,
+              "status": "passed"
+            },
+            "name": "User is on the home page",
+            "keyword": "Then ",
+            "line": 9,
+            "match": {
+              "location": "LoginStepDefinition.User_is_on_the_home_page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 210526924,
+              "status": "passed"
+            },
+            "name": "User moves to contact page",
+            "keyword": "Then ",
+            "line": 10,
+            "match": {
+              "location": "LoginStepDefinition.User_moves_to_contact_page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1328240879,
+              "status": "passed"
+            },
+            "name": "User enters contact \"\" and \"Tom\"  and \"Peter\"",
+            "keyword": "Then ",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                },
+                {
+                  "val": "Tom",
+                  "offset": 28
+                },
+                {
+                  "val": "Peter",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginStepDefinition.User_enters_and_and(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "result": {
+              "duration": 93735584,
+              "status": "failed",
+              "error_message": "org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter a first name\n): Please enter a first name\n\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027DEL1-DHP-27956\u0027, ip: \u0027172.16.38.26\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_79\u0027\nSession ID: 6ae6c1ab-056b-44b6-91eb-2c65d74048aa\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{platform\u003dWINDOWS, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dtrue, browserName\u003dfirefox, handlesAlerts\u003dtrue, nativeEvents\u003dfalse, webStorageEnabled\u003dtrue, rotatable\u003dfalse, locationContextEnabled\u003dtrue, applicationCacheEnabled\u003dtrue, takesScreenshot\u003dtrue, version\u003d45.0.2}]\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:526)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)\r\n\tat stepDefinition.LoginStepDefinition.close_the_browser(LoginStepDefinition.java:94)\r\n\tat ✽.Then close the browser(contact.feature:12)\r\n"
+            },
+            "name": "close the browser",
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "free-crm-contact;free-crm-create-a-new-contact-scenario;;3",
+        "description": "",
+        "name": "Free CRM Create a New Contact scenario",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "steps": [
+          {
+            "result": {
+              "duration": 15348146076,
+              "status": "passed"
+            },
+            "name": "User is already on Login Page",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "LoginStepDefinition.User_is_already_on_Login_Page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 151112238,
+              "status": "passed"
+            },
+            "name": "title of login page is Free CRM",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page_is_Free_CRM()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2499921084,
+              "status": "passed"
+            },
+            "name": "User enter \"naveenk\" and \"test@123\"",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "val": "naveenk",
+                  "offset": 12
+                },
+                {
+                  "val": "test@123",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginStepDefinition.User_enter_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ]
+          },
+          {
+            "result": {
+              "duration": 3450921428,
+              "status": "passed"
+            },
+            "name": "User clicks on login button",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "LoginStepDefinition.User_clicks_on_login_button()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13202444,
+              "status": "failed",
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[CRMPRO]\u003e but was:\u003c[#1 Free CRM software in the cloud for sales and service]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinition.LoginStepDefinition.User_is_on_the_home_page(LoginStepDefinition.java:65)\r\n\tat ✽.Then User is on the home page(contact.feature:9)\r\n"
+            },
+            "name": "User is on the home page",
+            "keyword": "Then ",
+            "line": 9,
+            "match": {
+              "location": "LoginStepDefinition.User_is_on_the_home_page()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "User moves to contact page",
+            "keyword": "Then ",
+            "line": 10,
+            "match": {
+              "location": "LoginStepDefinition.User_moves_to_contact_page()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "User enters contact \"\" and \"John\"  and \"Carry\"",
+            "keyword": "Then ",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                },
+                {
+                  "val": "John",
+                  "offset": 28
+                },
+                {
+                  "val": "Carry",
+                  "offset": 40
+                }
+              ],
+              "location": "LoginStepDefinition.User_enters_and_and(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "close the browser",
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "contact.feature"
+  },
+  {
     "id": "freecrm-login",
     "description": "",
     "name": "freeCRM Login",
@@ -7,80 +294,97 @@
     "line": 1,
     "elements": [
       {
-        "id": "freecrm-login;free-crm-login-test-scenario",
+        "id": "freecrm-login;free-crm-login-test-scenario;;2",
         "description": "",
         "name": "free CRM login Test Scenario",
-        "keyword": "Scenario",
-        "line": 2,
+        "keyword": "Scenario Outline",
+        "line": 25,
         "steps": [
           {
             "result": {
-              "duration": 18275066919,
+              "duration": 15819224208,
               "status": "passed"
             },
             "name": "User is already on Login Page",
             "keyword": "Given ",
-            "line": 4,
+            "line": 15,
             "match": {
               "location": "LoginStepDefinition.User_is_already_on_Login_Page()"
             }
           },
           {
             "result": {
-              "duration": 1599229248,
+              "duration": 78979515,
               "status": "passed"
             },
             "name": "title of login page is Free CRM",
             "keyword": "When ",
-            "line": 5,
+            "line": 16,
             "match": {
               "location": "LoginStepDefinition.title_of_login_page_is_Free_CRM()"
             }
           },
           {
             "result": {
-              "duration": 3774576738,
+              "duration": 1739855243,
               "status": "passed"
             },
-            "name": "User enter username and password",
+            "name": "User enter \"naveenk\" and \"test@123\"",
             "keyword": "Then ",
-            "line": 6,
+            "line": 17,
             "match": {
-              "location": "LoginStepDefinition.User_enter_username_and_password()"
-            }
+              "arguments": [
+                {
+                  "val": "naveenk",
+                  "offset": 12
+                },
+                {
+                  "val": "test@123",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginStepDefinition.User_enter_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ]
           },
           {
             "result": {
-              "duration": 203988430,
+              "duration": 3206105685,
               "status": "passed"
             },
             "name": "User clicks on login button",
             "keyword": "Then ",
-            "line": 7,
+            "line": 18,
             "match": {
               "location": "LoginStepDefinition.User_clicks_on_login_button()"
             }
           },
           {
             "result": {
-              "duration": 1344818581,
+              "duration": 12780273,
               "status": "passed"
             },
             "name": "User is on the home page",
             "keyword": "And ",
-            "line": 8,
+            "line": 19,
             "match": {
               "location": "LoginStepDefinition.User_is_on_the_home_page()"
             }
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10202019,
+              "status": "passed"
             },
             "name": "close the browser",
             "keyword": "Then ",
-            "line": 9,
-            "match": {}
+            "line": 20,
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            }
           }
         ],
         "type": "scenario"
