@@ -1,52 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="122.470869">
-<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="50.999518">
-<failure message="org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.xpath: //a[contains(text(),'New Contact')]&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'DEL1-DHP-27956', ip: '172.16.38.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'&#10;Session ID: ce992ff3-1123-4f13-8459-c7389e5a4d6f&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]&#13;&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)&#13;&#10;&#9;at stepDefinition.LoginStepDefinition.User_moves_to_contact_page(LoginStepDefinition.java:84)&#13;&#10;&#9;at ✽.Then User moves to contact page(contact.feature:10)&#13;&#10;"><![CDATA[Given User is already on Login Page.........................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="60.93257">
+<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="26.453622">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
 When title of login page is Free CRM........................................passed
 Then User enter "naveenk" and "test@123"....................................passed
 Then User clicks on login button............................................passed
 Then User is on the home page...............................................passed
-Then User moves to contact page.............................................failed
-Then User enters contact "" and "Tom"  and "Peter"..........................skipped
-Then close the browser......................................................skipped
-
-StackTrace:
-org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.xpath: //a[contains(text(),'New Contact')]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'DEL1-DHP-27956', ip: '172.16.38.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: ce992ff3-1123-4f13-8459-c7389e5a4d6f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at stepDefinition.LoginStepDefinition.User_moves_to_contact_page(LoginStepDefinition.java:84)
-	at ✽.Then User moves to contact page(contact.feature:10)
-]]></failure>
+Then User moves to contact page.............................................passed
+Then User enters contact "" and "Tom"  and "Peter"..........................passed
+Then close the browser......................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="51.958631">
-<failure message="org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.xpath: //a[contains(text(),'New Contact')]&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'DEL1-DHP-27956', ip: '172.16.38.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'&#10;Session ID: f871bf3f-d83e-4031-93f1-f5ab46fed12e&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]&#13;&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)&#13;&#10;&#9;at stepDefinition.LoginStepDefinition.User_moves_to_contact_page(LoginStepDefinition.java:84)&#13;&#10;&#9;at ✽.Then User moves to contact page(contact.feature:10)&#13;&#10;"><![CDATA[Given User is already on Login Page.........................................passed
+<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="17.228317">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
 When title of login page is Free CRM........................................passed
 Then User enter "naveenk" and "test@123"....................................passed
 Then User clicks on login button............................................passed
 Then User is on the home page...............................................passed
-Then User moves to contact page.............................................failed
-Then User enters contact "" and "John"  and "Carry".........................skipped
-Then close the browser......................................................skipped
-
-StackTrace:
-org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.xpath: //a[contains(text(),'New Contact')]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'DEL1-DHP-27956', ip: '172.16.38.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: f871bf3f-d83e-4031-93f1-f5ab46fed12e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at stepDefinition.LoginStepDefinition.User_moves_to_contact_page(LoginStepDefinition.java:84)
-	at ✽.Then User moves to contact page(contact.feature:10)
-]]></failure>
+Then User moves to contact page.............................................passed
+Then User enters contact "" and "John"  and "Carry".........................passed
+Then close the browser......................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="freeCRM Login" name="free CRM login Test Scenario" time="19.51272">
+<testcase classname="freeCRM Login" name="free CRM login Test Scenario" time="17.250631">
 <system-out><![CDATA[Given User is already on Login Page.........................................passed
 When title of login page is Free CRM........................................passed
 Then User enter "naveenk" and "test@123"....................................passed

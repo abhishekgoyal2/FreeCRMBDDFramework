@@ -4,8 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Action;
+//import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +23,11 @@ public static WebDriver driver;
 	@Given("^User is already on Login Page$")
 	public void User_is_already_on_Login_Page() throws Throwable {
 		//This step open Firefox and takes user to Free CRM page.
-		driver= new FirefoxDriver();
+		
+		System.setProperty("webdriver.chrome.driver","D:\\Projects\\chromedriver_win32 (1)\\chromedriver.exe");
+		driver =new ChromeDriver();
+		
+//		driver= new FirefoxDriver();
 		driver.get("https://www.freecrm.com/index.html");
 	    // Express the Regexp above with the code you wish you had
 //	    throw new PendingException();
@@ -81,7 +86,7 @@ public static WebDriver driver;
 		Actions newconac=new Actions(driver);
 		newconac.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
 		
-		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'New Contact')]")));
+		new WebDriverWait(driver, 90).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'New Contact')]")));
 		driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
 		
 //	    throw new PendingException();
@@ -90,9 +95,11 @@ public static WebDriver driver;
 	@Then("^User enters contact \"([^\"]*)\" and \"([^\"]*)\"  and \"([^\"]*)\"$")
 	public void User_enters_and_and(String firstname, String lastname, String position) throws Throwable {
 		System.out.println("User enters new contact details and save details ");
-		driver.findElement(By.id("first_name")).sendKeys(firstname);
-		driver.findElement(By.id("surname")).sendKeys(lastname);
-		driver.findElement(By.id("company_position")).sendKeys(lastname);
+		new WebDriverWait(driver, 90).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='first_name']")));
+		driver.findElement(By.xpath("//*[@id='first_name']")).sendKeys(firstname);
+		
+		driver.findElement(By.xpath("//*[@id='surname']")).sendKeys(lastname);
+		driver.findElement(By.xpath("//*[@id='company_position']")).sendKeys(lastname);
 		driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
 	    // Express the Regexp above with the code you wish you had
 //	    throw new PendingException();
