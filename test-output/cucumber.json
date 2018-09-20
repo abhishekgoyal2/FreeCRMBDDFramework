@@ -15,7 +15,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15159379525,
+              "duration": 14959248704,
               "status": "passed"
             },
             "name": "User is already on Login Page",
@@ -27,7 +27,7 @@
           },
           {
             "result": {
-              "duration": 1342132076,
+              "duration": 66097229,
               "status": "passed"
             },
             "name": "title of login page is Free CRM",
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 1663590962,
+              "duration": 1509144669,
               "status": "passed"
             },
             "name": "User enter \"naveenk\" and \"test@123\"",
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 3513187045,
+              "duration": 77918637,
               "status": "passed"
             },
             "name": "User clicks on login button",
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 12703282,
+              "duration": 660242792,
               "status": "passed"
             },
             "name": "User is on the home page",
@@ -89,8 +89,9 @@
           },
           {
             "result": {
-              "duration": 210526924,
-              "status": "passed"
+              "duration": 33726866130,
+              "status": "failed",
+              "error_message": "org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.xpath: //a[contains(text(),\u0027New Contact\u0027)]\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027DEL1-DHP-27956\u0027, ip: \u0027172.16.38.26\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_79\u0027\nSession ID: ce992ff3-1123-4f13-8459-c7389e5a4d6f\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{platform\u003dWINDOWS, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dtrue, browserName\u003dfirefox, handlesAlerts\u003dtrue, nativeEvents\u003dfalse, webStorageEnabled\u003dtrue, rotatable\u003dfalse, locationContextEnabled\u003dtrue, applicationCacheEnabled\u003dtrue, takesScreenshot\u003dtrue, version\u003d45.0.2}]\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)\r\n\tat stepDefinition.LoginStepDefinition.User_moves_to_contact_page(LoginStepDefinition.java:84)\r\n\tat ✽.Then User moves to contact page(contact.feature:10)\r\n"
             },
             "name": "User moves to contact page",
             "keyword": "Then ",
@@ -101,8 +102,7 @@
           },
           {
             "result": {
-              "duration": 1328240879,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "User enters contact \"\" and \"Tom\"  and \"Peter\"",
             "keyword": "Then ",
@@ -132,9 +132,7 @@
           },
           {
             "result": {
-              "duration": 93735584,
-              "status": "failed",
-              "error_message": "org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter a first name\n): Please enter a first name\n\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027DEL1-DHP-27956\u0027, ip: \u0027172.16.38.26\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_79\u0027\nSession ID: 6ae6c1ab-056b-44b6-91eb-2c65d74048aa\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{platform\u003dWINDOWS, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dtrue, browserName\u003dfirefox, handlesAlerts\u003dtrue, nativeEvents\u003dfalse, webStorageEnabled\u003dtrue, rotatable\u003dfalse, locationContextEnabled\u003dtrue, applicationCacheEnabled\u003dtrue, takesScreenshot\u003dtrue, version\u003d45.0.2}]\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:526)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)\r\n\tat stepDefinition.LoginStepDefinition.close_the_browser(LoginStepDefinition.java:94)\r\n\tat ✽.Then close the browser(contact.feature:12)\r\n"
+              "status": "skipped"
             },
             "name": "close the browser",
             "keyword": "Then ",
@@ -155,7 +153,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15348146076,
+              "duration": 14659409680,
               "status": "passed"
             },
             "name": "User is already on Login Page",
@@ -167,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 151112238,
+              "duration": 149385703,
               "status": "passed"
             },
             "name": "title of login page is Free CRM",
@@ -179,7 +177,7 @@
           },
           {
             "result": {
-              "duration": 2499921084,
+              "duration": 2504957934,
               "status": "passed"
             },
             "name": "User enter \"naveenk\" and \"test@123\"",
@@ -205,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 3450921428,
+              "duration": 85713067,
               "status": "passed"
             },
             "name": "User clicks on login button",
@@ -217,9 +215,8 @@
           },
           {
             "result": {
-              "duration": 13202444,
-              "status": "failed",
-              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[CRMPRO]\u003e but was:\u003c[#1 Free CRM software in the cloud for sales and service]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinition.LoginStepDefinition.User_is_on_the_home_page(LoginStepDefinition.java:65)\r\n\tat ✽.Then User is on the home page(contact.feature:9)\r\n"
+              "duration": 853537729,
+              "status": "passed"
             },
             "name": "User is on the home page",
             "keyword": "Then ",
@@ -230,7 +227,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 33705626413,
+              "status": "failed",
+              "error_message": "org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.xpath: //a[contains(text(),\u0027New Contact\u0027)]\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027DEL1-DHP-27956\u0027, ip: \u0027172.16.38.26\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_79\u0027\nSession ID: f871bf3f-d83e-4031-93f1-f5ab46fed12e\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{platform\u003dWINDOWS, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dtrue, browserName\u003dfirefox, handlesAlerts\u003dtrue, nativeEvents\u003dfalse, webStorageEnabled\u003dtrue, rotatable\u003dfalse, locationContextEnabled\u003dtrue, applicationCacheEnabled\u003dtrue, takesScreenshot\u003dtrue, version\u003d45.0.2}]\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)\r\n\tat stepDefinition.LoginStepDefinition.User_moves_to_contact_page(LoginStepDefinition.java:84)\r\n\tat ✽.Then User moves to contact page(contact.feature:10)\r\n"
             },
             "name": "User moves to contact page",
             "keyword": "Then ",
@@ -302,7 +301,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15819224208,
+              "duration": 16998380611,
               "status": "passed"
             },
             "name": "User is already on Login Page",
@@ -314,7 +313,7 @@
           },
           {
             "result": {
-              "duration": 78979515,
+              "duration": 53233868,
               "status": "passed"
             },
             "name": "title of login page is Free CRM",
@@ -326,7 +325,7 @@
           },
           {
             "result": {
-              "duration": 1739855243,
+              "duration": 1703675961,
               "status": "passed"
             },
             "name": "User enter \"naveenk\" and \"test@123\"",
@@ -352,7 +351,7 @@
           },
           {
             "result": {
-              "duration": 3206105685,
+              "duration": 65665755,
               "status": "passed"
             },
             "name": "User clicks on login button",
@@ -364,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 12780273,
+              "duration": 676408769,
               "status": "passed"
             },
             "name": "User is on the home page",
@@ -376,7 +375,7 @@
           },
           {
             "result": {
-              "duration": 10202019,
+              "duration": 15354998,
               "status": "passed"
             },
             "name": "close the browser",

@@ -1,11 +1,14 @@
 package stepDefinition;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -49,8 +52,10 @@ public static WebDriver driver;
 	@Then("^User clicks on login button$")
 	public void User_clicks_on_login_button() throws Throwable {
 	    
-		WebElement LoginPage =driver.findElement(By.xpath("//*[@id=\"loginForm\"]/div/div/input"));
-		LoginPage.click();
+		 WebElement loginBtn =
+				 driver.findElement(By.xpath("//input[@type='submit']"));
+				 JavascriptExecutor js = (JavascriptExecutor)driver;
+				 js.executeScript("arguments[0].click();", loginBtn);
 		// Express the Regexp above with the code you wish you had
 		
 //	    throw new PendingException();
@@ -69,11 +74,15 @@ public static WebDriver driver;
 	@Then("^User moves to contact page$")
 	public void User_moves_to_contact_page() throws Throwable {
 	    // Express the Regexp above with the code you wish you had
+		
+		
 		System.out.println("User moves to contact page ");
 		driver.switchTo().frame("mainpanel");
 		Actions newconac=new Actions(driver);
-		newconac.moveToElement(driver.findElement(By.xpath("//a[contains(text(),\"Contacts\")]"))).build().perform();
-		driver.findElement(By.xpath("//a[contains(text(),\"New Contact\")]")).click();
+		newconac.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
+		
+		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'New Contact')]")));
+		driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
 		
 //	    throw new PendingException();
 	}
