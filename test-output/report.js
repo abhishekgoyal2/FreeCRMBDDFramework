@@ -112,56 +112,56 @@ formatter.match({
   "location": "DealsStepWithMapDefinition.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 11602119314,
+  "duration": 15024224345,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepWithMapDefinition.the_title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 28788003,
+  "duration": 47244417,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepWithMapDefinition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 277010147,
+  "duration": 427285903,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepWithMapDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 6162806730,
+  "duration": 5842245502,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 7881020,
+  "duration": 8107183,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepWithMapDefinition.user_moves_to_new_deal_page()"
 });
 formatter.result({
-  "duration": 335205933,
+  "duration": 436944781,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepWithMapDefinition.user_enters_deal_details(DataTable)"
 });
 formatter.result({
-  "duration": 2197383195,
-  "status": "failed",
-  "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat stepDefinition.DealsStepWithMapDefinition.user_enters_deal_details(DealsStepWithMapDefinition.java:106)\r\n\tat ✽.Then user enters deal details(C:/Users/abhishek.goyal2/workspace/FreeCRMBDDFramework/src/main/java/Features/dealsmap.feature:14)\r\n"
+  "duration": 11413111167,
+  "status": "passed"
 });
 formatter.match({
   "location": "DealsStepWithMapDefinition.Close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 228179387,
+  "status": "passed"
 });
 });

@@ -15,7 +15,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11602119314,
+              "duration": 15024224345,
               "status": "passed"
             },
             "name": "user is already on the Login Page",
@@ -27,7 +27,7 @@
           },
           {
             "result": {
-              "duration": 28788003,
+              "duration": 47244417,
               "status": "passed"
             },
             "name": "title of login page is Free CRM",
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 277010147,
+              "duration": 427285903,
               "status": "passed"
             },
             "name": "user enters username and password",
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 6162806730,
+              "duration": 5842245502,
               "status": "passed"
             },
             "name": "user clicks on login button",
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 7881020,
+              "duration": 8107183,
               "status": "passed"
             },
             "name": "user is on home page",
@@ -91,7 +91,7 @@
           },
           {
             "result": {
-              "duration": 335205933,
+              "duration": 436944781,
               "status": "passed"
             },
             "name": "user moves to new deal page",
@@ -103,9 +103,8 @@
           },
           {
             "result": {
-              "duration": 2197383195,
-              "status": "failed",
-              "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat stepDefinition.DealsStepWithMapDefinition.user_enters_deal_details(DealsStepWithMapDefinition.java:106)\r\n\tat ✽.Then user enters deal details(C:/Users/abhishek.goyal2/workspace/FreeCRMBDDFramework/src/main/java/Features/dealsmap.feature:14)\r\n"
+              "duration": 11413111167,
+              "status": "passed"
             },
             "name": "user enters deal details",
             "keyword": "Then ",
@@ -154,7 +153,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 228179387,
+              "status": "passed"
             },
             "name": "Close the browser",
             "keyword": "Then ",

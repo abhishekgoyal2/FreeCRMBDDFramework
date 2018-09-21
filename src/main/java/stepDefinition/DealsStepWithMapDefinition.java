@@ -101,11 +101,14 @@ WebElement password1 =driver.findElement(By.name("password"));
 		 driver.findElement(By.id("amount")).sendKeys(data.get("amount"));
 		 driver.findElement(By.id("probability")).sendKeys(data.get("probability"));
 		 driver.findElement(By.id("commission")).sendKeys(data.get("commission"));
+		 
 		driver.findElement(By.xpath("//input[@type='submit'and @value='Save']")).click(); //save button
-		 driver.wait(1000);
+	
+		    Thread.sleep(2000);
+		
 		//move to new deal page:
 		 Actions action = new Actions(driver);
-//		 new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Deals')]")));
+		
 			action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Deals')]"))).build().perform();
 			driver.findElement(By.xpath("//a[contains(text(),'New Deal')]")).click();
 		}
