@@ -86,7 +86,7 @@ public static WebDriver driver;
 		Actions newconac=new Actions(driver);
 		newconac.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
 		
-		new WebDriverWait(driver, 90).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'New Contact')]")));
+		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'New Contact')]")));
 		driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
 		
 //	    throw new PendingException();
@@ -95,7 +95,7 @@ public static WebDriver driver;
 	@Then("^User enters contact \"([^\"]*)\" and \"([^\"]*)\"  and \"([^\"]*)\"$")
 	public void User_enters_and_and(String firstname, String lastname, String position) throws Throwable {
 		System.out.println("User enters new contact details and save details ");
-		new WebDriverWait(driver, 90).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='first_name']")));
+		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='first_name']")));
 		driver.findElement(By.xpath("//*[@id='first_name']")).sendKeys(firstname);
 		
 		driver.findElement(By.xpath("//*[@id='surname']")).sendKeys(lastname);

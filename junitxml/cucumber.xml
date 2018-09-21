@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="60.93257">
-<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="26.453622">
-<system-out><![CDATA[Given User is already on Login Page.........................................passed
-When title of login page is Free CRM........................................passed
-Then User enter "naveenk" and "test@123"....................................passed
-Then User clicks on login button............................................passed
-Then User is on the home page...............................................passed
-Then User moves to contact page.............................................passed
-Then User enters contact "" and "Tom"  and "Peter"..........................passed
-Then close the browser......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="0">
+<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="0">
+<system-out><![CDATA[Given User is already on Login Page.........................................skipped
+When title of login page is Free CRM........................................skipped
+Then User enter "naveenk" and "test@123"....................................skipped
+Then User clicks on login button............................................skipped
+Then User is on the home page...............................................skipped
+Then User moves to contact page.............................................skipped
+Then User enters contact "" and "Tom"  and "Peter"..........................skipped
+Then close the browser......................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="17.228317">
-<system-out><![CDATA[Given User is already on Login Page.........................................passed
-When title of login page is Free CRM........................................passed
-Then User enter "naveenk" and "test@123"....................................passed
-Then User clicks on login button............................................passed
-Then User is on the home page...............................................passed
-Then User moves to contact page.............................................passed
-Then User enters contact "" and "John"  and "Carry".........................passed
-Then close the browser......................................................passed
+<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="0">
+<system-out><![CDATA[Given User is already on Login Page.........................................skipped
+When title of login page is Free CRM........................................skipped
+Then User enter "naveenk" and "test@123"....................................skipped
+Then User clicks on login button............................................skipped
+Then User is on the home page...............................................skipped
+Then User moves to contact page.............................................skipped
+Then User enters contact "" and "John"  and "Carry".........................skipped
+Then close the browser......................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="freeCRM Login" name="free CRM login Test Scenario" time="17.250631">
-<system-out><![CDATA[Given User is already on Login Page.........................................passed
-When title of login page is Free CRM........................................passed
-Then User enter "naveenk" and "test@123"....................................passed
-Then User clicks on login button............................................passed
-And User is on the home page................................................passed
-Then close the browser......................................................passed
+<testcase classname="Deal data creation" name="Free CRM Create a new deal scenario" time="0">
+<system-out><![CDATA[Given user is already on Login Page.........................................skipped
+When the title of login page is Free CRM....................................skipped
+Then user enters username and password......................................skipped
+Then user clicks on login button............................................skipped
+Then user is on home page...................................................skipped
+Then user moves to new deal page............................................skipped
+Then user enters deal details...............................................skipped
+Then Close the browser......................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="freeCRM Login" name="free CRM login Test Scenario" time="0">
+<system-out><![CDATA[Given User is already on Login Page.........................................skipped
+When title of login page is Free CRM........................................skipped
+Then User enter "naveenk" and "test@123"....................................skipped
+Then User clicks on login button............................................skipped
+And User is on the home page................................................skipped
+Then close the browser......................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

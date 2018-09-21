@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		,glue={"stepDefinition"},
 		format= {"pretty","html:test-output","json:test-output/cucumber.json","junit:junitxml/cucumber.xml"},
 		monochrome=true,
-		dryRun=false,
+		dryRun=true,
 		strict=true
 		)
 public class Runner {
