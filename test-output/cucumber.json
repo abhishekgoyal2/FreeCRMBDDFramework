@@ -15,7 +15,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 11929375254,
+              "status": "passed"
             },
             "name": "User is already on Login Page",
             "keyword": "Given ",
@@ -26,7 +27,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 27195246,
+              "status": "passed"
             },
             "name": "title of login page is Free CRM",
             "keyword": "When ",
@@ -37,7 +39,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1379616751,
+              "status": "passed"
             },
             "name": "User enter \"naveenk\" and \"test@123\"",
             "keyword": "Then ",
@@ -62,7 +65,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 6194796929,
+              "status": "passed"
             },
             "name": "User clicks on login button",
             "keyword": "Then ",
@@ -73,7 +77,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5966504,
+              "status": "passed"
             },
             "name": "User is on the home page",
             "keyword": "Then ",
@@ -84,7 +89,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 484808657,
+              "status": "passed"
             },
             "name": "User moves to contact page",
             "keyword": "Then ",
@@ -95,7 +101,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1776299260,
+              "status": "passed"
             },
             "name": "User enters contact \"\" and \"Tom\"  and \"Peter\"",
             "keyword": "Then ",
@@ -125,7 +132,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2125429387,
+              "status": "passed"
             },
             "name": "close the browser",
             "keyword": "Then ",
@@ -146,7 +154,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 10242533770,
+              "status": "passed"
             },
             "name": "User is already on Login Page",
             "keyword": "Given ",
@@ -157,7 +166,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 39580256,
+              "status": "passed"
             },
             "name": "title of login page is Free CRM",
             "keyword": "When ",
@@ -168,7 +178,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 317112660,
+              "status": "passed"
             },
             "name": "User enter \"naveenk\" and \"test@123\"",
             "keyword": "Then ",
@@ -193,7 +204,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5736017100,
+              "status": "passed"
             },
             "name": "User clicks on login button",
             "keyword": "Then ",
@@ -204,7 +216,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 6676428,
+              "status": "passed"
             },
             "name": "User is on the home page",
             "keyword": "Then ",
@@ -215,7 +228,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 337408204,
+              "status": "passed"
             },
             "name": "User moves to contact page",
             "keyword": "Then ",
@@ -226,7 +240,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1700889827,
+              "status": "passed"
             },
             "name": "User enters contact \"\" and \"John\"  and \"Carry\"",
             "keyword": "Then ",
@@ -256,7 +271,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2118587428,
+              "status": "passed"
             },
             "name": "close the browser",
             "keyword": "Then ",
@@ -269,234 +285,6 @@
         "type": "scenario"
       }
     ],
-    "uri": "contact.feature"
-  },
-  {
-    "id": "deal-data-creation",
-    "description": "",
-    "name": "Deal data creation",
-    "keyword": "Feature",
-    "line": 1,
-    "elements": [
-      {
-        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
-        "description": "",
-        "name": "Free CRM Create a new deal scenario",
-        "keyword": "Scenario",
-        "line": 3,
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "user is already on Login Page",
-            "keyword": "Given ",
-            "line": 5,
-            "match": {
-              "location": "DealStepDefnition.user_is_already_on_Login_Page()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "the title of login page is Free CRM",
-            "keyword": "When ",
-            "line": 6,
-            "match": {
-              "location": "DealStepDefnition.the_title_of_login_page_is_Free_CRM()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "user enters username and password",
-            "keyword": "Then ",
-            "line": 7,
-            "match": {
-              "location": "DealStepDefnition.user_enters_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "naveenk",
-                  "test@123"
-                ],
-                "line": 8
-              }
-            ]
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "user clicks on login button",
-            "keyword": "Then ",
-            "line": 10,
-            "match": {
-              "location": "DealStepDefnition.user_clicks_on_login_button()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "user is on home page",
-            "keyword": "Then ",
-            "line": 11,
-            "match": {
-              "location": "DealStepDefnition.user_is_on_home_page()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "user moves to new deal page",
-            "keyword": "Then ",
-            "line": 12,
-            "match": {
-              "location": "DealStepDefnition.user_moves_to_new_deal_page()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "user enters deal details",
-            "keyword": "Then ",
-            "line": 13,
-            "match": {
-              "location": "DealStepDefnition.user_enters_deal_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "test deal",
-                  "1000",
-                  "50",
-                  "10"
-                ],
-                "line": 14
-              }
-            ]
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "Close the browser",
-            "keyword": "Then ",
-            "line": 16,
-            "match": {
-              "location": "DealStepDefnition.Close_the_browser()"
-            }
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "uri": "deals.feature"
-  },
-  {
-    "id": "freecrm-login",
-    "description": "",
-    "name": "freeCRM Login",
-    "keyword": "Feature",
-    "line": 1,
-    "elements": [
-      {
-        "id": "freecrm-login;free-crm-login-test-scenario;;2",
-        "description": "",
-        "name": "free CRM login Test Scenario",
-        "keyword": "Scenario Outline",
-        "line": 25,
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "User is already on Login Page",
-            "keyword": "Given ",
-            "line": 15,
-            "match": {
-              "location": "LoginStepDefinition.User_is_already_on_Login_Page()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "title of login page is Free CRM",
-            "keyword": "When ",
-            "line": 16,
-            "match": {
-              "location": "LoginStepDefinition.title_of_login_page_is_Free_CRM()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "User enter \"naveenk\" and \"test@123\"",
-            "keyword": "Then ",
-            "line": 17,
-            "match": {
-              "arguments": [
-                {
-                  "val": "naveenk",
-                  "offset": 12
-                },
-                {
-                  "val": "test@123",
-                  "offset": 26
-                }
-              ],
-              "location": "LoginStepDefinition.User_enter_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              2
-            ]
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "User clicks on login button",
-            "keyword": "Then ",
-            "line": 18,
-            "match": {
-              "location": "LoginStepDefinition.User_clicks_on_login_button()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "User is on the home page",
-            "keyword": "And ",
-            "line": 19,
-            "match": {
-              "location": "LoginStepDefinition.User_is_on_the_home_page()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "close the browser",
-            "keyword": "Then ",
-            "line": 20,
-            "match": {
-              "location": "LoginStepDefinition.close_the_browser()"
-            }
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "uri": "login.feature"
+    "uri": "C:/Users/abhishek.goyal2/workspace/FreeCRMBDDFramework/src/main/java/Features/contact.feature"
   }
 ]
