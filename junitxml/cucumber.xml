@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="44.422294">
-<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="23.923488">
-<system-out><![CDATA[Given User is already on Login Page.........................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.611194">
+<testcase classname="Deal data creation with map" name="Free CRM Create a new deal scenario" time="20.611194">
+<failure message="java.lang.IllegalMonitorStateException&#13;&#10;&#9;at java.lang.Object.wait(Native Method)&#13;&#10;&#9;at stepDefinition.DealsStepWithMapDefinition.user_enters_deal_details(DealsStepWithMapDefinition.java:106)&#13;&#10;&#9;at ✽.Then user enters deal details(C:/Users/abhishek.goyal2/workspace/FreeCRMBDDFramework/src/main/java/Features/dealsmap.feature:14)&#13;&#10;"><![CDATA[Given user is already on the Login Page.....................................passed
 When title of login page is Free CRM........................................passed
-Then User enter "naveenk" and "test@123"....................................passed
-Then User clicks on login button............................................passed
-Then User is on the home page...............................................passed
-Then User moves to contact page.............................................passed
-Then User enters contact "" and "Tom"  and "Peter"..........................passed
-Then close the browser......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM Contact" name="Free CRM Create a New Contact scenario" time="20.498806">
-<system-out><![CDATA[Given User is already on Login Page.........................................passed
-When title of login page is Free CRM........................................passed
-Then User enter "naveenk" and "test@123"....................................passed
-Then User clicks on login button............................................passed
-Then User is on the home page...............................................passed
-Then User moves to contact page.............................................passed
-Then User enters contact "" and "John"  and "Carry".........................passed
-Then close the browser......................................................passed
-]]></system-out>
+Then user enters username and password......................................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then user moves to new deal page............................................passed
+Then user enters deal details...............................................failed
+Then Close the browser......................................................skipped
+
+StackTrace:
+java.lang.IllegalMonitorStateException
+	at java.lang.Object.wait(Native Method)
+	at stepDefinition.DealsStepWithMapDefinition.user_enters_deal_details(DealsStepWithMapDefinition.java:106)
+	at ✽.Then user enters deal details(C:/Users/abhishek.goyal2/workspace/FreeCRMBDDFramework/src/main/java/Features/dealsmap.feature:14)
+]]></failure>
 </testcase>
 </testsuite>
